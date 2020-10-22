@@ -24,7 +24,7 @@ public class InstrutorDao implements Dao<Instrutor>{
 		return  em.find(Instrutor.class, id);
 	}
 
-	@Override
+	
 	public List<Instrutor> getAllbyFormacao(Formacao pformacao) {
 	
 		Query q  = em.createQuery("SELECT i FROM Instrutor i WHERE i.formacao = :pformacao ");
